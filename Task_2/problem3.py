@@ -8,6 +8,6 @@ elif num == 0:
     print("The factorial is 1")
 else:
     for i in ss:
-        fact *= i
+        fact = fact * i
     i_nums = ' * '.join(map(str, ss)) 
     print(f"The factorial of {num} is {fact} ({i_nums[::-1]})")
