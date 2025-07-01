@@ -3,7 +3,7 @@
 
 # since this file is sourced either use the provided _CATKIN_SETUP_DIR
 # or fall back to the destination set at configure time
-: ${_CATKIN_SETUP_DIR:=/home/rawida/catkin_ws/install}
+: ${_CATKIN_SETUP_DIR:=/home/rawida/Desktop/gittt/IEEE-RAS-ROS-25/Task_8/catkin_ws/install}
 CATKIN_SETUP_UTIL_ARGS="--extend --local"
 . "$_CATKIN_SETUP_DIR/setup.sh"
 unset CATKIN_SETUP_UTIL_ARGS

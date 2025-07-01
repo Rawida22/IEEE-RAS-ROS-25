@@ -1,2 +1,2 @@
-
--DCATKIN_DEVEL_PREFIX=/home/rawida/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/rawida/catkin_ws/install -G Unix Makefiles
+first_tutorials
+-DCATKIN_DEVEL_PREFIX=/home/rawida/Desktop/gittt/IEEE-RAS-ROS-25/Task_8/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/rawida/Desktop/gittt/IEEE-RAS-ROS-25/Task_8/catkin_ws/install -G Unix Makefiles

@@ -5,7 +5,7 @@
 # or fall back to the destination set at configure time
 
 if test -z $_CATKIN_SETUP_DIR
-    set _CATKIN_SETUP_DIR /home/rawida/catkin_ws/devel
+    set _CATKIN_SETUP_DIR /home/rawida/Desktop/gittt/IEEE-RAS-ROS-25/Task_8/catkin_ws/devel
 end
 
 set CATKIN_SETUP_UTIL_ARGS "--extend --local"

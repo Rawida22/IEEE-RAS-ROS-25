@@ -1,0 +1,8 @@
+prefix=/home/rawida/Desktop/gittt/IEEE-RAS-ROS-25/Task_8/catkin_ws/install
+
+Name: first_tutorials
+Description: Description of first_tutorials
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
