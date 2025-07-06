@@ -1,0 +1,10 @@
+<launch>
+    <!---to publish hello world --> 
+    <node name="talker" pkg="milestone2_robot" type= "talker.py" output="screen" />
+    <!--to publish circle motion-->
+    <node name= "Circle_motion" pkg= "milestone2_robot" type= "circle_motion.py" output="screen" />
+    <!--to subscribe both topics-->
+    <node name= "multi_subscriber" pkg= "milestone2_robot" type= "multi_sub.py" output="screen" />
+    <!--to start turtlesim-->
+    <node name="turtlesim" pkg="turtlesim" type="turtlesim_node" output="screen"/>
+</launch>
