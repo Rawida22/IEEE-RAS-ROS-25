@@ -1,0 +1,9 @@
+<launch>
+    <node name= "imu_sensor" pkg= "milestone2_robot" type= "imu_sub.py" output="screen" />
+    <node name="ultrasonic_front" pkg= "milestone2_robot" type= "ultrasonic_front.py" output="screen" />
+    <node name="ultrasonic_left" pkg= "milestone2_robot" type= "ultrasonic_left.py" output="screen" />
+    <node name="ultrasonic_right" pkg= "milestone2_robot" type= "ultrasonic_right.py" output="screen" />
+    <node name= "odom_subscriber" pkg= "milestone2_robot" type= "odom_sub.py" output="screen" /> 
+    <!--AutoMove-->
+    <node name= "move_forward" pkg= "milestone2_robot" type= "odom_movement.py" output="screen" />
+</launch>    
