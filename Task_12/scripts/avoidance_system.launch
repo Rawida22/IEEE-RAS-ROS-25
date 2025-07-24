@@ -1,0 +1,23 @@
+<launch>
+  <!-- Use simulation time from Gazebo -->
+  <param name="use_sim_time" value="true" />
+
+  <!-- Launch Gazebo with the world -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find milestone2_robot)/worlds/f1_world.world" />
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+  </include>
+
+  <!-- Load URDF robot description -->
+  <param name="robot_description"
+         command="$(find xacro)/xacro '$(find milestone2_robot)/urdf/milestone2_robot.urdf'" />
+
+  <!-- Start sensor fusion node -->
+  <node name="Sensor_fusion" pkg="milestone2_robot" type="Sensor_fusion.py" output="screen" />
+
+  <!-- Start obstacle avoidance node -->
+  <node name="obstacle_avoidance" pkg="milestone2_robot" type="Obstacle_avoidance.py" output="screen" />
+
+</launch>
